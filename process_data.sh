@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Run python script to collect and store temperature and rel humidity data
-#/usr/bin/python /home/pi/Desktop/example00.py
+/usr/bin/python /home/pi/Desktop/example00.py
 #awk '{p=f;f=$1} NR>1{print f-p}' /home/pi/Desktop/temperature.txt >> dT.txt
 #awk '{p=f;f=$1} NR>1{print f-p}' /home/pi/Desktop/rh.txt >> dr.txt
 #Plot data
