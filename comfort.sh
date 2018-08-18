@@ -13,6 +13,10 @@ set xlabel "time"
 set ylabel "RH"
 set xrange [ 0 : 287 ] noreverse nowriteback
 set yrange [ 45 : 70 ] noreverse nowriteback
+set arrow from 72, graph 0 to 72, graph 1 nohead
+set arrow from 144, graph 0 to 144, graph 1 nohead
+set arrow from 216, graph 0 to 216, graph 1 nohead
+
 plot "/home/pi/Desktop/rh.txt" using 1
 
 set y2tics
