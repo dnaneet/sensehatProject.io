@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python 
 #This version samples temperature and relative humidity every 0.05 seconds for ~5 times and saves the arithmetic mean.  The previous version only obtained a single data point.  This version should and the arithmetic mean should help with the variability that single data point measurements fall prey to.
 #
 # Author: Aneet Narendranath,PhD, Date: 04-July-2018
