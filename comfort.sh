@@ -15,11 +15,15 @@ set xrange [ 0 : 287 ] noreverse nowriteback
 set yrange [ 45 : 70 ] noreverse nowriteback
 plot "/home/pi/Desktop/rh.txt" using 1
 
+set y2tics
+ymin=20
+ymax=30
 set nokey
 set xlabel "time"
 set ylabel "temperature"
 set xrange [ 0 : 287 ]
-set yrange [ 20 : 30 ]
+set yrange [ ymin : ymax ]
+set y2range [ ymin*1.8 + 32 : ymax*1.8 + 32 ]
 plot "/home/pi/Desktop/temperature.txt" using 1
 
 #eof
