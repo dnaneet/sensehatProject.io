@@ -9,7 +9,7 @@ cp /home/pi/Desktop/sensehatProject/data/data.csv /home/pi/Desktop/sensehatProje
 /usr/bin/git pull --quiet origin master
 /usr/bin/git add --all > /dev/null 2>&1
 /usr/bin/git commit -m "data" > /dev/null 2>&1
-/usr/bin/git push origin master --quiet
+/usr/bin/git push origin master
 
 
 #''Plotting''#
