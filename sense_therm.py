@@ -29,7 +29,7 @@ for i in range(n):
 
 time_stamp = str(pd.datetime.now())
 df = pd.DataFrame({'timestamp': time_stamp, 'temperature': np.mean(temp), 'relativeHumidity': np.mean(rh)}, index=[0])
-df.to_csv('/home/pi/Desktop/data.csv', mode='a', header=False)
+df.to_csv('/home/pi/Desktop/sensehatProject/data/data.csv', mode='a', header=False)
 
 #print temp[1:] #Print for debugging
 #print np.mean(temp[1:]) #Print for debugging
