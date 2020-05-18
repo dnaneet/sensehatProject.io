@@ -27,7 +27,7 @@ for i in range(n):
 #	z = float(compass['x'])
 	time.sleep(0.05)
 
-time_stamp = str(pd.datetime.now())
+time_stamp = print(str(pd.datetime.now().replace(second=0, microsecond=0)))
 df = pd.DataFrame({'timestamp': time_stamp, 'temperature': np.round(np.mean(temp),1), 'relativeHumidity': np.round(np.mean(rh))}, index=[0])
 df.to_csv('/home/pi/Desktop/sensehatProject/data/data.csv', mode='a', header=False)
 
