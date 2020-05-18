@@ -8,7 +8,8 @@
 cp /home/pi/Desktop/sensehatProject/data/data.csv /home/pi/Desktop/sensehatProject/data/$(date -d "today" '+%y-%m-%d').data.csv
 /usr/bin/git pull -q origin master
 /usr/bin/git add --all 
-/usr/bin/git commit -m "data"
+/usr/bin/git commit -m "data" &
+sleep 5
 /usr/bin/git push -q origin master
 
 
