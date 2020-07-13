@@ -30,7 +30,8 @@ for i in range(n):
 time_stamp = str(pd.datetime.now().replace(second=0, microsecond=0))
 df = pd.DataFrame({'timestamp': time_stamp, 'temperature': np.round(np.mean(temp),1)*1.8+32-6, 'relativeHumidity': np.round(np.mean(rh-3.5))}, index=[0])
 df.to_csv('/home/pi/Desktop/sensehatProject/data/data.csv', mode='a', header=False)
-
+#print(df.tail(15))
+#.to_csv('/home/pi/Desktop/sensehatProject/data/recent.csv', mode='a', header=False)
 #print temp[1:] #Print for debugging
 #print np.mean(temp[1:]) #Print for debugging
 
