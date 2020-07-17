@@ -8,8 +8,8 @@
 cp /home/pi/Desktop/sensehatProject/data/data.csv /home/pi/Desktop/sensehatProject/data/$(date -d "today" '+%y-%m-%d').data.csv
 #tail -6 $(ls -ltrh /home/pi/Desktop/sensehatProject/data/*.csv | tail -1 | awk '{print $9}') > recent.csv
 
-
-cat $(ls -ltrh /home/pi/Desktop/sensehatProject/data/*-*data.csv | tail -1 | awk '{print $9}') >> /home/pi/Desktop/sensehatProject/data/today.csv
+rm /home/pi/Desktop/sensehatProject/data/recent.csv
+tail -25 $(ls -ltrh /home/pi/Desktop/sensehatProject/data/*-*data.csv | tail -1 | awk '{print $9}') >> /home/pi/Desktop/sensehatProject/data/recent.csv
 
 #/usr/bin/git pull --quiet origin master
 #/usr/bin/git add --all > /dev/null 2>&1
